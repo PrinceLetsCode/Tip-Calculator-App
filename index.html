@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="javaScript/index.js" defer></script>
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+
+  <body>
+    <img class="main-logo" src="images/logo.svg" alt="splitter-logo" />
+
+    <div class="main-container">
+      <!-- Calculation Sub-container -->
+
+      <div class="calculation-sub-container">
+        <span>Bill</span>
+        <div class="bill">
+          <img src="images/icon-dollar.svg" alt="icon-dollar" />
+          <input id="initial-bill" type="text" placeholder="0" />
+        </div>
+
+        <span>Select Tip %</span>
+        <div class="tip">
+          <button class="tip-percentage">5%</button>
+          <button class="tip-percentage">10%</button>
+          <button class="tip-percentage">15%</button>
+          <button class="tip-percentage">25%</button>
+          <button class="tip-percentage">50%</button>
+          <input id="custom-percentage"  type="text" placeholder="Custom" />
+        </div>
+
+        <div>
+          <div id="error-div">
+          <span>Number of People</span>
+          <span  class="cant-be-zero">Can't be Zero</span>
+        </div>
+          <div class="no-of-people">
+            <img src="images/icon-person.svg" alt="icon-person" />
+            <input id="no-of-people" type="text" placeholder="0" />
+          </div>
+        </div>
+      </div>
+
+      <!-- total Sub-container -->
+
+      <div class="total-sub-container">
+        <div class="tip-amount">
+          <div>
+            <span class="ta">Tip Amount</span>
+            <span class="pp">/ person</span>
+          </div>
+
+          <span class="amt tip-amt-pp">&#8377;0.00</span>
+        </div>
+
+        <div class="total-amt">
+          <div class="total-person">
+            <span class="ta">Total</span>
+            <span class="pp">/ person</span>
+          </div>
+          <span class="amt total-amt-pp">&#8377;0.00</span>
+        </div>
+
+
+        <div>
+          <!-- <div class="overlay"></div> -->
+        <button class="reset">RESET</button>
+      </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/PrinceKumar931"
+        >Prince Kumar</a
+      >.
+    </div>
+  </body>
+</html>
